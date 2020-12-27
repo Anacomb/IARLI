@@ -1,0 +1,19 @@
+{
+
+  "description": "Add a button on youtube.com to automaticaly click all the 'Im not interested' button in the recommandation page ",
+  "manifest_version": 1,
+  "name": "IARLI (I Am Really Not Interested",
+  "version": "1.0",
+  "homepage_url": "",
+  "icons": {
+    "48": "icons/trash-solid.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
